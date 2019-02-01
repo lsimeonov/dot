@@ -30,16 +30,16 @@ for z in ${DIR}/.*; do
     baseName=$(basename "${z}")
 
      [[ ${baseName} =~ ^(.git|.|..)$ ]] && continue
-
+    echo -e "${G}installing${W} ${baseName}"
     if [[ -e ${HOME}/${baseName} ]]; then
         if [[ -n ${F} ]] || Q "File ${HOME}/${baseName} already exists. Overwrite?"; then
-            rm -rf -- ${z}
+            echo -e "Overriding ${HOME}/${baseName} with symlink to ${z}"
+            rm -rf ${HOME}/${baseName}
         else
             echo -e "${R}skip${W} ${baseName}"
             continue
         fi
     fi
 
-    echo -e "${G}install${W} ${baseName}"
-    ln -s ${z} ${HOME}/${baseName}
+    ln -sf ${z} ${HOME}/${baseName}
 done
