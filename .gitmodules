@@ -1,0 +1,9 @@
+[submodule "vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim-airline-theme"]
+    path = .vim/bundle/vim-airline-theme
+    url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "vim-colors-solarized"]
+    path = .vim/bundle/vim-colors-solarized
+    url = git@github.com:altercation/vim-colors-solarized.git
