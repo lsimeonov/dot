@@ -109,3 +109,8 @@ export GOPATH="$HOME/go"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+#export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+PATH="/usr/local/opt/python/libexec/bin:$PATH"
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
