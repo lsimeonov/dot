@@ -65,12 +65,10 @@ ZSH_THEME="blinks"
 plugins=(
   git
   osx
-  laravel
-  laravel5
-  symfony2
   docker
   yarn
   composer
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,5 +110,5 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 #export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
-PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
