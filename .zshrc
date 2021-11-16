@@ -64,7 +64,7 @@ ZSH_THEME="blinks"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  macos
   docker
   yarn
   composer
@@ -108,8 +108,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 #export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
@@ -123,4 +121,10 @@ export N_PREFIX=$HOME/.n
 export PATH="$N_PREFIX/bin:$PATH"
 
 export COMPOSER_MEMORY_LIMIT=-1
+
 export PATH="/usr/local/opt/curl-openssl/bin:$PATH"
+# Ruby version
+export PATH="/usr/local/opt/ruby@2.7/bin:$PATH"
+#export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+#export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
